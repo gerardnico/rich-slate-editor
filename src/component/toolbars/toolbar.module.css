@@ -1,0 +1,38 @@
+
+.toolbarIndicator {
+    font-size: 12px;
+    vertical-align: text-bottom;
+    margin: 0 1px;
+    padding: 0 3px;
+    border-radius: 10%;
+}
+.toolbarButton {
+    font-size: 20px;
+    vertical-align: text-bottom;
+    margin: 0 1px;
+    padding: 0 3px;
+    border-radius: 10%;
+
+    /* Transparent button */
+    border: 0;
+    outline: 0; /* if active, happens with floating-ui */
+
+    :hover {
+        background-color: #f0f0f0
+    }
+}
+
+.toolbar {
+    background-color: white
+}
+
+/**
+* Used on floating bar (hovering bar or list selection bar)
+ */
+.toolbarFloating {
+    outline: 0;
+    padding: 3px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}

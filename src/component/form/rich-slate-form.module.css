@@ -1,0 +1,4 @@
+/** No default margin on p, there should be only one p as this only text */
+.richSlateEditable > p {
+    margin-bottom: 0;
+}

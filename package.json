@@ -1,0 +1,56 @@
+{
+  "name": "@combojs/editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.13.5",
+    "@floating-ui/react": "^0.27.19",
+    "clsx": "^2.1.1",
+    "image-extensions": "^1.1.0",
+    "is-hotkey": "^0.2.0",
+    "react-hook-form": "^7.78.0",
+    "react-icons": "^5.6.0",
+    "slate": "0.120.0",
+    "slate-dom": "0.119.0",
+    "slate-history": "0.113.1",
+    "slate-react": "0.120.0",
+    "tailwind-merge": "^3.6.0"
+  },
+  "peerDependencies": {
+    "prismjs": "1.29.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.1",
+    "@testing-library/user-event": "14.6.1",
+    "@types/is-hotkey": "^0",
+    "@types/node": "^25.9.2",
+    "@types/prettier": "2.7.2",
+    "@types/prismjs": "1.26.0",
+    "@types/react": "18.3.27",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "5.1.2",
+    "jsdom": "21.1.1",
+    "prettier": "2.8.8",
+    "prismjs": "1.29.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "slate-hyperscript": "0.100.0",
+    "typescript": "5.9.3",
+    "vite": "7.1.11",
+    "vitest": "4.0.17"
+  },
+  "packageManager": "yarn@4.12.0"
+}

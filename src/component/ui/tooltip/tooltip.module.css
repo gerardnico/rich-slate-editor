@@ -1,0 +1,7 @@
+
+.innerTooltip:last-child {
+    /*no margin for the last element otherwise the content is not centered*/
+    margin-bottom: 0;
+    /*text align is center by default, and it does not help the visual when using long rich text such as list*/
+    text-align: unset
+}

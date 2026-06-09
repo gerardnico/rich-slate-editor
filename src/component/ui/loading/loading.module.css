@@ -1,0 +1,15 @@
+/*We may also use Bootstrap placeholder placeholder-wave*/
+/*https://getbootstrap.com/docs/5.1/components/placeholders/*/
+.pulseGrayColor {
+    background-color: #ccc; /* Initial gray color */
+    animation: pulseGrayKeyFrame 1s infinite alternate; /* Pulse effect for 2 seconds */
+}
+
+@keyframes pulseGrayKeyFrame {
+    from {
+        background-color: white; /* Start color: white */
+    }
+    to {
+        background-color: #ccc; /* End color: gray */
+    }
+}

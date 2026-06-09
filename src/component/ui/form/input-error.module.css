@@ -1,0 +1,7 @@
+.invalidFeedback {
+    width: 100%;
+    margin: 1rem 0;
+    font-size: .875em;
+    /*noinspection CssUnresolvedCustomProperty*/
+    color: var(--bs-form-invalid-color);
+}
