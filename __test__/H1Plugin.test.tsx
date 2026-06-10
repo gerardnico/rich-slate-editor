@@ -3,9 +3,9 @@
 /// <reference path="jsxIntrinsicElement.d.ts" />
 import {jsx} from './jsxFactory'
 import {expect, test} from "vitest";
-import {H1Plugin} from "../src/plugin/node/element/block/heading/H1Plugin";
-import {RichSlateBuilder} from "../src/RichSlateBuilder";
-import {H1PluginBuilder} from "../src/plugin/node/element/block/heading/H1PluginBuilder";
+import {H1Plugin} from "@/plugin/node/element/block/heading/H1Plugin.tsx";
+import {RichSlateBuilder} from "@/RichSlateBuilder.ts";
+import {H1PluginBuilder} from "@/plugin/node/element/block/heading/H1PluginBuilder.ts";
 import {RichSlateTest} from "./RichSlateTest";
 import {Editor} from "slate";
 import {HTMLTest} from "./HTMLTest";

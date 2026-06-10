@@ -11,16 +11,16 @@ By default, the constructor of a node is `React.createElemnt`
 but you can define another constructor called the `jsxFactory` with the `@jsx` construct
 
 Steps:
-* At the top of your file, the below statement state that to construct element, 
+* At the top of your file, the below statement state that to construct element,
 you need to use the `jsx` variable.
 ```jsx
 /** @jsx jsx */
 ```
-* Then to avoid [pragmaFrag cannot be set when runtime is automatic](https://dev.to/samby_mahapatra/how-to-solve-pragma-and-pragmafrag-can-not-be-set-while-runtime-is-automatic-error-1i4c) 
+* Then to avoid [pragmaFrag cannot be set when runtime is automatic](https://dev.to/samby_mahapatra/how-to-solve-pragma-and-pragmafrag-can-not-be-set-while-runtime-is-automatic-error-1i4c)
 ```jsx
 /** @jsxRuntime classic */
 ```
-* Then you import the `jsx` variable factory from [jsxFactory.ts](../__test__/jsxFactory.ts) that defines your node
+* Then you import the `jsx` variable factory from [jsxFactory.ts](../../__test__/jsxFactory.ts) that defines your node
 ```jsx
 import {jsx} from './jsxFactory'
 ```
@@ -37,7 +37,7 @@ const editor = (
 
 * And use it in your code
 
-Check the [Factory](../__test__/jsxFactory.ts)
+Check the [Factory](../../__test__/jsxFactory.ts)
 
 ## Doc / Reference
 

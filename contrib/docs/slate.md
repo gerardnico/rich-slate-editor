@@ -77,7 +77,7 @@ Transforms.insertText(editor, 'some words', {
 })
 ```
 
-* Delete all of the content in the range
+* Delete all the content in the range
 
 ```javascript
 Transforms.delete(editor, {
@@ -157,13 +157,13 @@ The Editor itself has a path of `[]`.
 For example, to select the whole contents of the editor, call
 `Transforms.select(editor, [])`
 
-Check [slate-select](../__test__/slate-selection.test.tsx) to see the path of a selection.
+Check [slate-select](../../__test__/slate-selection.test.tsx) to see the path of a selection.
 
 ### Point (Position Addressing)
 
 Point is a path (for a node) and an offset into the text.
 
-Check [slate-select](../__test__/slate-selection.test.tsx) to see the points of a selection.
+Check [slate-select](../../__test__/slate-selection.test.tsx) to see the points of a selection.
 
 Get the start point of a Location
 
@@ -182,7 +182,7 @@ let range = {
 }
 ```
 
-Check [slate-select](../__test__/slate-selection.test.tsx) to see the range of a selection.
+Check [slate-select](../../__test__/slate-selection.test.tsx) to see the range of a selection.
 
 ```javascript
 // Get the start and end points of a range in order.
@@ -263,6 +263,5 @@ Others:
 
 * [Npm](https://www.npmjs.com/search?q=keywords%3Aslate-plugins)
 * [Awesome Slate](https://github.com/arahansen/awesome-slate)
-* List of plugin with a cloud offering for image https://plate.udecode.io/
-  * [Drag And Drop Block](https://plate.udecode.io/docs/components/dnd)
+* Old list of plugin with a cloud offering for image (Dead link https://plate.udecode.io/)
 * [Slate Yjs](https://github.com/BitPhinix/slate-yjs) for collaborative editing

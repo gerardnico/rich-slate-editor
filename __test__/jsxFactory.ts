@@ -1,5 +1,5 @@
 import {createHyperscript, createText} from 'slate-hyperscript'
-import {PElementPlugin} from "../src/plugin/node/element/block/paragraph/PElementPlugin";
+import {PElementPlugin} from "@/plugin/node/element/block/paragraph/PElementPlugin.tsx";
 
 /**
  * This is the mapping for the JSX that creates editor state.

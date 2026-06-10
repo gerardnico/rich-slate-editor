@@ -227,8 +227,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@combojs/editor@workspace:."
   dependencies:
-    "@emotion/css": "npm:^11.13.5"
-    "@floating-ui/react": "npm:^0.27.19"
+    "@emotion/css": "npm:11.13.5"
+    "@floating-ui/react": "npm:0.27.19"
     "@testing-library/dom": "npm:10.4.1"
     "@testing-library/jest-dom": "npm:6.9.1"
     "@testing-library/react": "npm:16.3.1"
@@ -248,8 +248,8 @@ __metadata:
     prismjs: "npm:1.29.0"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
-    react-hook-form: "npm:^7.78.0"
-    react-icons: "npm:^5.6.0"
+    react-hook-form: "npm:7.78.0"
+    react-icons: "npm:5.6.0"
     slate: "npm:0.120.0"
     slate-dom: "npm:0.119.0"
     slate-history: "npm:0.113.1"
@@ -260,9 +260,24 @@ __metadata:
     vite: "npm:7.1.11"
     vitest: "npm:4.0.17"
   peerDependencies:
+    "@emotion/css": 11.13.5
+    "@floating-ui/react": 0.27.19
     prismjs: 1.29.0
     react: 18.3.1
     react-dom: 18.3.1
+    react-hook-form: 7.78.0
+    react-icons: 5.6.0
+  peerDependenciesMeta:
+    "@emotion/css":
+      optional: true
+    "@floating-ui/react":
+      optional: true
+    prismjs:
+      optional: true
+    react-hook-form:
+      optional: true
+    react-icons:
+      optional: true
   languageName: unknown
   linkType: soft
 
@@ -298,7 +313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/css@npm:^11.13.5":
+"@emotion/css@npm:11.13.5":
   version: 11.13.5
   resolution: "@emotion/css@npm:11.13.5"
   dependencies:
@@ -761,7 +776,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@floating-ui/react@npm:^0.27.19":
+"@floating-ui/react@npm:0.27.19":
   version: 0.27.19
   resolution: "@floating-ui/react@npm:0.27.19"
   dependencies:
@@ -2630,7 +2645,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:^7.78.0":
+"react-hook-form@npm:7.78.0":
   version: 7.78.0
   resolution: "react-hook-form@npm:7.78.0"
   peerDependencies:
@@ -2639,7 +2654,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^5.6.0":
+"react-icons@npm:5.6.0":
   version: 5.6.0
   resolution: "react-icons@npm:5.6.0"
   peerDependencies:

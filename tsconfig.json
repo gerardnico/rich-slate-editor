@@ -24,6 +24,7 @@
     "src",
     "pages",
     "vite.config.ts",
+    "contrib/scripts",
     "__test__",
     "node_modules/vitest/globals.d.ts"
   ]

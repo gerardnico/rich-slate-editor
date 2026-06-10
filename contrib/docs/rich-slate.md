@@ -27,7 +27,7 @@ return (
 )
 ```
 
-Check the [text editor example](../src/component/form/RichSlateTextArea.tsx)
+Check the [text editor example](../../src/component/form/RichSlateTextArea.tsx)
 
 ## Rich Slate Object
 
@@ -40,19 +40,19 @@ It adds:
 
 ## Plugin
 
-[Rich Slate Plugin](../src/plugin/RichSlatePlugin.tsx) is the plugin entry point.
+[Rich Slate Plugin](../../src/plugin/RichSlatePlugin.tsx) is the plugin entry point.
 
 You add a plugin if you want to add a functionality.
 
 A plugin:
 
-* render leaf or element
-* enhance the Slate command at construction
-* subscribe and react to events
-* register Toolbar button or portal component
+* renders leaf or element
+* enhances the Slate command at construction
+* subscribes and react to events
+* registers Toolbar button or portal component
 * contains its specific Slate command (insert, delete, ...)
 
-A plugin extend the [Rich Slate Plugin](../src/plugin/RichSlatePlugin.tsx)
+A plugin extends the [Rich Slate Plugin](../../src/plugin/RichSlatePlugin.tsx)
 
 In our plugin systems, there is:
 
@@ -63,13 +63,13 @@ In our plugin systems, there is:
 
 To share common behaviour, we have created this abstract specialised plugin that you can extend
 
-* [Element Plugin](../src/plugin/ElementPlugin.ts)
-    * [Inline Element Plugin](../src/plugin/InlineElementPlugin.ts)
-    * [Block Element Plugin](../src/plugin/BlockElementPlugin.tsx)
+* [Element Plugin](../../src/plugin/ElementPlugin.ts)
+  * [Inline Element Plugin](../../src/plugin/InlineElementPlugin.ts)
+  * [Block Element Plugin](../../src/plugin/BlockElementPlugin.tsx)
 * Node Attributes:
-    * [Mark plugin](../src/plugin/TextMarkPlugin.ts) for Text node
-    * [Attribute plugin](../src/plugin/ElementAttributePlugin.ts) for Element node
-* [Storage Plugin](../src/plugin/StoragePlugin.ts)
+  * [Mark plugin](../../src/plugin/TextMarkPlugin.ts) for Text node
+  * [Attribute plugin](../../src/plugin/ElementAttributePlugin.ts) for Element node
+* [Storage Plugin](../../src/plugin/StoragePlugin.ts)
 
 A plugin is a class that:
 
@@ -88,17 +88,17 @@ Via the `richSlate` object, a plugin can register the following React component:
 These components are used in the following Built-In React component
 that you can use to create your editor:
 
-* [RichSlateToolbar](../src/component/toolbars/RichSlateToolbar.tsx)
-* [RichSlateHoveringToolbar](../src/component/toolbars/RichSlateHoveringToolbar.tsx)
-* [RichSlatePortalComponents](../src/component/toolbars/RichSlatePortalComponents.tsx)
+* [RichSlateToolbar](../../src/component/toolbars/RichSlateToolbar.tsx)
+* [RichSlateHoveringToolbar](../../src/component/toolbars/RichSlateHoveringToolbar.tsx)
+* Portal Component (ie Dialog) are injected at the bottom of the Slate Editor
 
 ### React Hook
 
 In a Rich Slate React component, you can:
 
 * get access to the [RichSlate object](#rich-slate-object) via
-  the [useRichSlate hook](../src/component/context/useRichSlate.ts)
-* get access to a [plugin](#plugin) via the [useRichSlatePlugin hook](../src/component/context/useRichSlatePlugin.ts)
+  the [useRichSlate hook](../../src/component/context/useRichSlate.ts)
+* get access to a [plugin](#plugin) via the [useRichSlatePlugin hook](../../src/component/context/useRichSlatePlugin.ts)
 * subscribe to event via the `useRichSlateXxxxSubscription` hooks (See below)
 
 ### Event Handling
@@ -108,3 +108,15 @@ Component can use the hook `useRichSlateXxxxSubscription` to add a callback on e
 We have created a subscription model above
 the [slate event-handling](https://docs.slatejs.org/libraries/slate-react/event-handling)
 so that we can use them in loss component.
+
+### Testing
+
+Check the [test documentation](test.md)
+
+### Plugin Dependencies
+
+Plugin dependencies are marked as optional peer-dependencies.
+You need to add them if you use a plugin
+
+* For all portal dialog plugins, we use: `react-hook-form` and `@floating-ui/react`
+* `prismjs` is used only for the markdown editor

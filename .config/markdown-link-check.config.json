@@ -1,0 +1,17 @@
+{
+  "projectBaseUrl": "${workspaceFolder}",
+  "ignorePatterns": [
+    {
+      "pattern": "^mailto*"
+    },
+    {
+      "pattern": "example\\.com"
+    },
+    {
+      "pattern": "plate\\.udecode\\.io"
+    },
+    {
+      "pattern": "npmjs\\.com/search"
+    }
+  ]
+}

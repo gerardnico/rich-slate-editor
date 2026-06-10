@@ -174,7 +174,7 @@ export class RichSlate {
 
     /**
      *
-     * @private change the editor behavioral function
+     * @private change the editor behavioural function
      */
     private mountEditor() {
 

@@ -6,4 +6,4 @@
 
 `Rich` Slate is at `Slate` what `Rich` text is at `text`.
 
-See the documentation at [RichSlate](./doc/rich-slate.md).
+See the documentation at [RichSlate](contrib/docs/rich-slate.md).

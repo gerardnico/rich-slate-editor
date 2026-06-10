@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import {AnchorLinkPlugin} from "./AnchorLinkPlugin";
 import {ReactEditor, useSlateStatic} from "slate-react";
-import {useRichSlatePlugin} from "../../../../../component/context/useRichSlatePlugin";
+import {useRichSlatePlugin} from "@/component/context/useRichSlatePlugin.ts";
 import {AnchorLinkDialog} from "./AnchorLinkDialog.tsx";
 import {
     useRichSlateDoubleClickSubscription
-} from "../../../../../component/context/useRichSlateDoubleClickSubscription.ts";
+} from "@/component/context/useRichSlateDoubleClickSubscription.ts";
 
 /**
  * The portal

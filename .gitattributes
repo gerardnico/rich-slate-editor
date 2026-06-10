@@ -1,19 +1,16 @@
-# Last win
+# In .gitattributes, the last matching rule wins
+
 # all files LF
-* text eol=lf
+* text=auto eol=lf
 
-
+# Exception: cmd command uses CRLF (Windows line endings)
 *.cmd text eol=crlf
 *.bat text eol=crlf
 
+# images
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
 *.ico binary
 *.webp binary
-
-
-
-
-

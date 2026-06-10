@@ -10,7 +10,6 @@ import {useRichSlate} from "./useRichSlate.ts";
 export const useRichSlateChangeSubscription = (plugin: RichSlatePlugin, handler: () => void) => {
 
     const richSlate = useRichSlate();
-    // Subscribe to key down
     React.useEffect(() => {
         richSlate.addOnChangeHandler(plugin, handler)
         return () => {
